@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="loginpage">
+        <h2 class="header">Login</h2>
+        <input type="text" id="userInput" placeholder="Username">
+        <input type="password" id="passInput" placeholder="Password">
+        <p>
+            <a href="#" onclick="showForgot()">Forgot password</a>
+        </p>
+        <button onclick="loginUser()">Login</button>
+        <p>
+            <a href="#" onclick="showRegister()">Register</a>
+        </p>
+    </div>
+    <div class="container" id="registerpage" style="display: none;" >
+        <h2>Register</h2>
+        <input type="text" id="name" placeholder="Enter a Username">
+        <input type="password" id="pass" placeholder="Create password">
+        <button onclick="registerUser()">Register</button>
+        <p>
+            Already have an account? <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+    <div class="container" id="forgotpage" style="display: none;">
+        <h2>Reset Password</h2>
+        <input type="text" id="Forgotuser" placeholder="Username">
+        <input type="password" id="newInput" placeholder="New Password">
+        <button onclick="resetpassword()">Reset Password</button>
+        <p>
+            Password Reset. <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+    <div class="container" id="dashboardpage" style="display: none;">
+        <h2 id="message">Welcome</h2>
+        <p>Get started!</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

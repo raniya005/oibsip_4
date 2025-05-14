@@ -1,0 +1,47 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:peachpuff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.header{
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS',sans-serif;
+    font-size: 30px;
+}
+.container{
+    background:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px;
+    width: 300px;
+    text-align: center;
+}
+input{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid blanchedalmond;
+}
+button{
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aquamarine;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: green;
+}
